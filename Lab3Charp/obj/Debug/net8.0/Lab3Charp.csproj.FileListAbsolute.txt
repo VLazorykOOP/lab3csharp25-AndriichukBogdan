@@ -1,0 +1,15 @@
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\bin\Debug\net8.0\Lab3Charp.exe
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\bin\Debug\net8.0\Lab3Charp.deps.json
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\bin\Debug\net8.0\Lab3Charp.runtimeconfig.json
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\bin\Debug\net8.0\Lab3Charp.dll
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\bin\Debug\net8.0\Lab3Charp.pdb
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.AssemblyInfoInputs.cache
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.AssemblyInfo.cs
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.csproj.CoreCompileInputs.cache
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.sourcelink.json
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.dll
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\refint\Lab3Charp.dll
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.pdb
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\Lab3Charp.genruntimeconfig.cache
+D:\Projects\University\С#\Laba3\lab3csharp25-AndriichukBogdan\Lab3Charp\obj\Debug\net8.0\ref\Lab3Charp.dll
