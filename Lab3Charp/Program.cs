@@ -1,43 +1,51 @@
-﻿namespace Lab3Charp{
+﻿namespace Lab3Charp
+{
     using System;
-    internal class Program{
+    internal class Program
+    {
         /* 
         
         Старт першого завдання
 
         */
-        class Point{
+        class Point
+        {
             private int x;
             private int y;
             private int c;
-            public Point(){
+            public Point()
+            {
                 this.x = 0;
                 this.y = 0;
                 this.c = 0;
             }
-            public Point(int dX, int dY, int color){
+            public Point(int dX, int dY, int color)
+            {
                 this.x = dX;
                 this.y = dY;
                 this.c = color;
             }
 
-            public void getCords(){
+            public void getCords()
+            {
                 Console.WriteLine("X,Y = " + this.x + "," + this.y);
             }
 
-            public double getDistance(){
+            public double getDistance()
+            {
                 double distance = Math.Sqrt((x * x) + (y * y));
                 Console.WriteLine("Distance = " + distance);
                 return distance;
             }
 
-            public void moveByVector(int x1, int y1){
+            public void moveByVector(int x1, int y1)
+            {
                 Console.WriteLine("Old dot:" + this.x + "," + this.y);
                 this.x += x1;
                 this.y += y1;
                 Console.WriteLine("New dot:" + this.x + "," + this.y);
             }
-            
+
             public int X
             {
                 get { return this.x; }
@@ -50,7 +58,8 @@
                 set { this.y = value; }
             }
 
-            public int Color{
+            public int Color
+            {
                 get { return this.c; }
             }
         }
@@ -66,23 +75,27 @@
         
         */
 
-        class Person{
+        class Person
+        {
             protected string Name;
-            protected int age; // Виправлено: Використовується приватне поле age
+            protected int age; 
             protected int Salary;
 
-            public Person(string name, int age, int salary){
+            public Person(string name, int age, int salary)
+            {
                 this.Name = name;
                 this.age = age;
                 this.Salary = salary;
             }
 
-            public virtual void Show(){
+            public virtual void Show()
+            {
                 Console.WriteLine("Name: " + this.Name + ", Age: " + this.Age + ", Salary: " + this.Salary);
             }
 
-            public int Age{  
-                get { return age; } // Виправлено: Повертається приватне поле age
+            public int Age
+            {
+                get { return age; } 
             }
         }
 
@@ -90,37 +103,45 @@
         {
             private string Faculty;
 
-            public Student(string name, int age, string faculty) : base(name, age, 0){
+            public Student(string name, int age, string faculty) : base(name, age, 0)
+            {
                 this.Faculty = faculty;
             }
 
-            public override void Show(){
+            public override void Show()
+            {
                 Console.WriteLine("Student: " + this.Name + ", Age: " + this.Age + ", Faculty: " + this.Faculty);
             }
         }
 
-        class Teacher : Person{
+        class Teacher : Person
+        {
             protected string Subject;
             protected int Experience;
 
-            public Teacher(string name, int age, int salary, string subject, int experience) : base(name, age, salary){
+            public Teacher(string name, int age, int salary, string subject, int experience) : base(name, age, salary)
+            {
                 this.Subject = subject;
                 this.Experience = experience;
             }
 
-            public override void Show(){
+            public override void Show()
+            {
                 Console.WriteLine("Teacher: " + this.Name + ", Age: " + this.Age + ", Subject: " + this.Subject + ", Experience: " + this.Experience + " years, Salary: " + this.Salary);
             }
         }
 
-        class HeadOfDepartment : Teacher{
+        class HeadOfDepartment : Teacher
+        {
             private string Department;
 
-            public HeadOfDepartment(string name, int age, int salary, string subject, int experience, string department) : base(name, age, salary, subject, experience){
+            public HeadOfDepartment(string name, int age, int salary, string subject, int experience, string department) : base(name, age, salary, subject, experience)
+            {
                 this.Department = department;
             }
 
-            public override void Show(){
+            public override void Show()
+            {
                 Console.WriteLine("Head of Department: " + this.Name + ", Age: " + this.Age + ", Subject: " + this.Subject + ", Experience: " + this.Experience + " years, Department: " + this.Department + ", Salary: " + this.Salary);
             }
         }
@@ -131,17 +152,19 @@
         
         */
 
-        static void Main(string[] args){
+        static void Main(string[] args)
+        {
 
-            void task1(){
+            void task1()
+            {
 
                 Console.WriteLine("Create Point in (2,1) with colour 255");
-                Point dot = new Point(2,1,255);
+                Point dot = new Point(2, 1, 255);
                 dot.getCords();
                 dot.getDistance();
 
                 Console.WriteLine("Moving by vector (5,7)");
-                dot.moveByVector(5,7);
+                dot.moveByVector(5, 7);
                 Console.WriteLine("New cords");
                 dot.getCords();
 
@@ -181,7 +204,8 @@
                 }
             }
 
-            void task2(){
+            void task2()
+            {
                 Person[] people = new Person[]{
                     new Student("Andrey", 20, "FMI"),
                     new Student("Maria", 22, "FBR"),
@@ -192,13 +216,17 @@
 
                 Console.WriteLine("Data before sorting:");
 
-                foreach (var person in people){
+                foreach (var person in people)
+                {
                     person.Show();
                 }
 
-                for (int i = 0; i < people.Length - 1; i++){
-                    for (int j = 0; j < people.Length - i - 1; j++){
-                        if (people[j].Age > people[j + 1].Age){
+                for (int i = 0; i < people.Length - 1; i++)
+                {
+                    for (int j = 0; j < people.Length - i - 1; j++)
+                    {
+                        if (people[j].Age > people[j + 1].Age)
+                        {
                             Person temp = people[j];
                             people[j] = people[j + 1];
                             people[j + 1] = temp;
@@ -212,33 +240,35 @@
                     person.Show();
                 }
             }
-            
-            void choose_task(){
+
+            void choose_task()
+            {
                 Console.Write("1. Point\n2. Hierarchy\n");
                 int answer = Convert.ToInt16(System.Console.ReadLine());
 
-                switch (answer){
-                    case 1:{
-                        task1();
-                        Console.Write("\n\n\n");
-                        choose_task();
-                        break;
-                    }
-                    case 2:{
-                        task2();
-                        Console.Write("\n\n\n");
-                        choose_task();
-                        break;
-                    }
-                    default:{
-                        Console.WriteLine("Invalid choice, try again.");
-                        choose_task();
-                        break;
-                    }
+                switch (answer)
+                {
+                    case 1:
+                        {
+                            task1();
+                            Console.Write("\n\n\n");
+                            choose_task();
+                            break;
+                        }
+                    case 2:
+                        {
+                            task2();
+                            Console.Write("\n\n\n");
+                            choose_task();
+                            break;
+                        }
+                    default:
+                        {
+                            choose_task();
+                            break;
+                        }
                 }
             }
-
-            Console.WriteLine("Привіт!");
             choose_task();
         }
     }
